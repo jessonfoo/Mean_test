@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+  <meta charset="UTF-8">
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+
+  <body class="sb-inactive">
+  <aside id="side-nav" class="side-nav inactive">
+    <i id="menu-icon" class="fa fa-bars fa-2x hamburger" aria-hidden="true"></i>
+    <nav class="clearfix">
+      <h1 id="nav-home" class="center">Memory Game</h1>
+      <a id="nav-instructions" class="menu-item" href="#">Instructions</a>
+      <a id="nav-game" class="menu-item" href="#">Game</a>
+    </nav>
+  </aside>
+    <div class="container-fluid"> 
+      <div id="landing" class="container hidden"> 
+        <h1 class="center">Memory Game</h1>
+          <h1><%= title %></h1>
+          <p>Welcome to <%= title %></p>
+        </div>
+        <div id="instructions" class="container hidden"> 
+          <h2>Instructions</h2>
+          <p>
+            Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are         flipped face up over each turn. The object of the game is to turn over pairs of matching cards.
+          </p>
+        </div>
+
+        <div id="game" class="container active"> 
+          <div class="board">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <footer>
+      Created with &hearts; by <span class="name">Jesson</span>
+    </footer>
+
+    <script src="javascripts/main.js"></script>
   </body>
 </html>
