@@ -83,11 +83,6 @@ var board = document.querySelectorAll('.board')[0];
      // thisCard = val;
      // return false;
    }
-   if((lastCard !== undefined) && (thisCard !== undefined)){
-     if ($('.card.active').length >= 2){
-       $('.card.active').addClass('blank').removeClass('active');
-     }
-   }
    console.log('thisCard: ',thisCard);
    return false;
  }
@@ -112,7 +107,6 @@ var board = document.querySelectorAll('.board')[0];
    //   
    //   })
    // })
-  $('.card.blank').click(function(){$(this).toggleClass('blank').addClass('active');})
  }
 function init(){
   return listen();

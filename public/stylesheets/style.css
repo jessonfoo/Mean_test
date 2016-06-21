@@ -520,3 +520,16 @@ footer{
   width: 100%;
   color: white;
 }
+.card p{
+  font-family: roboto;
+  color: white;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 30%;
+  font-size: 10vh;
+  cursor:pointer;
+}
+.card.blank p{
+  color:rgba(0,0,0,0);
+}
